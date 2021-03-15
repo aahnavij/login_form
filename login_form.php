@@ -42,7 +42,7 @@
   <label for="state">State:</label><br>
   <input type="text" id="state" name="state"><br><br>
 
-<label >Enter zip code:</label><br>
+<label >Enter zip code</label><br>
   <input type="text" id="zip" name="zip" ><br><br>
   
   
