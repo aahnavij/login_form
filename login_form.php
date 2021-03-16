@@ -9,7 +9,7 @@
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="" required><br>
 
-    <button id="okButton" disabled>OK</button>
+<!--     <button id="okButton" disabled>OK</button> -->
 
   <span id="firstn"></span><br><br>
   <label for="lname">Last name:</label><br>
@@ -85,26 +85,6 @@ $(document).ready(function(){
 // 	alert('wrong');
 // }
 
-
-
-
-const nameField = document.getElementById('fname');
-const isValidEmail = emailField.checkValidity();
-nameField.addEventListener('keyup', function (event) {
-  isValidEmail = emailField.checkValidity();
-  
-  if ( isValidEmail ) {
-    okButton.disabled = false;
-  } else {
-    okButton.disabled = true;
-  }
-});
-
-
-
-
-
-
 		
 function validation(){
 
@@ -118,6 +98,7 @@ if(first_n == "")
 if(!isNaN(first_n)){
 	document.getElementById('firstn').innerHTML="only characters are allowed";
 	document.getElementById('firstn').style.color="red";
+	
 	return false;
 }
 var last_n = document.getElementById('lname').value;
